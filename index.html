@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Rudina Morina</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">About Me</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#education">Education</a></li>
+				</ul>
+			</nav>
+
+		<!-- About me -->
+			<div class="wrapper style1 first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u 12u(mobile)">
+							<span class="image fit"><img src="rm.jpg" alt="" /></span>
+						</div>
+						<div class="8u 12u(mobile)">
+							<p>Hi! I'm Rudina. I hold a bachelor's degree in Electrical and Computer Engineering from Carnegie Mellon University.
+							I am now pursuing my masters in Electrical and Computer Engineering, focusing primarily in Machine Learning.</p>
+
+							<p>I strive to find ways in which I can apply my computer science and engineering skills to solve social and medical problems. Areas that particularly intrest me include computer systems, signal processing and machine learning. I have spent my past three summers working at Google, as part of the Google Health Search team, Accessibility team and Chrome team respectively.</p>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Experience -->
+			<div class="wrapper style4">
+				<article class="container" id="experience">
+					<div class="row">
+
+						<div class="12u">
+							<h3>Google - Software Engineering Intern, Google Health Search (Summer 2016)</h3>
+
+							<p> The work this summer not only provided me with the incredible opportunity of understanding many aspects of the Google Search infastructure, but it also allowed me to put that knowledge to good social use.</p>
+
+							<p> The implementation of the feature touched on many aspects of Google Search infrastructure: query parsing, data storage and data fetching from the <a href="https://www.google.com/intl/es419/insidesearch/features/search/knowledge.html">Google Knowledge Graph</a> (C++), and frontend development (Java, Javascript, Html). 
+							</p>
+
+							<p>The feature I've been working on this summer has not been launched yet, so I cannot share the details until launch.</p>
+
+						</div>
+
+						<div class="container">
+							<h3>Google - Software Engineering Intern, Accessibility (Summer 2015)</h3>
+							<div class="row">
+								<div class="4u 12u(mobile)" style="padding-left:1em">
+									<img src="a11y.jpg" width=140% height=140% style="padding-top:3em"
+									>
+								</div>
+								<div class="8u 12u(mobile)" style="padding-left:11em">
+									<p>I worked on improving the efficiency of <a href="https://support.google.com/accessibility/android/answer/6122836?hl=en">Switch Access</a>, an accessibility service that helps users with motor disabilities access their Android devices.
+									</p>
+
+									<p> Switch Access enables a user to control an Android device using a single or multiple switches. Using these switches, a user navigates through any screen of selectable items. Currently there are two basic methods of navigation: linear and row-column scanning. In linear scanning each of the items in the screen is highlighted one after the other and once the desired item has been highlighted the user presses the switch to choose that item. In row-column scanning each individual row is highlighted first and once the user chooses a desired row, each columns is highlighted until the user chooses the desired item. </p>
+								</div>	
+							</div>
+						</div>
+
+						<div class="12u" style="padding-top:0em">
+							<p> I developed two new scanning features that were in particular geared towards improving the typing efficiency for these users: (1) option scanning and 
+							(2) probability-based scanning. In option scanning, given the N switches a user may choose to use, the items in the screen are divided into N buckets. Each group is highlighted in colors that correspond to the user's switches. The user then recursively selects the desired item. 
+
+							Probability scanning was a novel idea that I experiemented with. I utilized an n-gram character model to obtain the probabilities of each letter. These probabilities were then used to construct Huffman trees that guaranteed an optimal encoding for each letter. This meant that at any point in time we were able to optimize the number of clicks a user would have to make to select the desired option. </p>
+
+							<p> In September 2015, Switch Access went open sourced. 
+							<a href="https://github.com/google/talkback/tree/master/src/main/java/com/android/switchaccess">Here</a> is the code base.
+							I have authored <a href="https://github.com/google/talkback/blob/master/src/main/java/com/android/switchaccess/HuffmanTreeBuilder.java">HuffmanTreeBuilder.java</a>,
+							<a href="https://github.com/google/talkback/blob/master/src/main/java/com/android/switchaccess/PPMTrie.java"> PPMTrie.java</a>, 
+							<a href="https://github.com/google/talkback/blob/master/src/main/java/com/android/switchaccess/ProbabilityModelReader.java"> ProbabilityModelReader.java</a>, and
+							<a href="https://github.com/google/talkback/blob/master/src/main/java/com/android/switchaccess/TalkBackOrderNDegreeTreeBuilder.java"> TalkBackOrderNDegreeTreeBuilder.java</a>.
+							</p>
+
+							<p> I have since grown to be a passionate advocate of Accessibility.
+							In November 2015 and April 2016, I gave a lecture - 
+							<a href="https://www.cs.cmu.edu/~112/notes/notes-data-compression.html#accessibilityApplication">Data Compression with Huffman Encoding</a> - to about 400 students. I primarily focused on the application of Huffman Encoding in improving the typing efficiency for users with motor impairment. I developed a 
+							<a href="https://www.cs.cmu.edu/~112/notes/notes-data-compression-keyboard.html">demo</a> of a typing interface to show the efficiency improvement when using Huffman Encoding. </p>
+						</div>
+
+						<div class="12u">
+							<h3>Google - Engineering Practicum Intern, Chrome Networking (Summer 2014)</h3>
+
+							<p>I designed and implemented from grouds-up an FTP Client as a Chrome App using JavaScript, HTML and CSS. The app was designed to add FTP functionalities previously not supported within the Chrome browser.</p>
+
+							<p>The FTP client supported basic functionalities such as directory navigation, recursive uploading and downloading, concurrent file upload and download.</p>
+						
+						</div>			
+					</div>
+				</article>
+			</div>
+
+		<!-- Projects -->
+			<div class="wrapper style2">
+				<article class="container" id="projects">
+						<div class="12u">
+							<h3>Linux-like kernel</h3>
+							<p>As part of Carnegie Mellon's Operating System class, working with a partner I designed and implemented a linux-like kernel for the x86 architecture.</p>
+
+							<p> The kernel supports basic functionalities such as preemtive multi-process scheduling in a round robin fashion, process spawning, two level page table VM, and a simple shell. The kernel also supports device drivers for the keyboard, the console, and the timer. </p>
+
+							<p> Furthermore, as part of the project preceeding the implementation of the kernel, I developed a thread library and concurrency primitives, which included mutexes, condition variables, semaphores, and read/write locks. The kernel was then able to load and run user space programs that used my implementation of the thread library and the concurrency primitives. </p>
+
+							<p> Since this is an ongoing class at CMU, the code is not public, but I can provide it on request.</p>
+						</div>
+
+						<div class="container">
+							<h3>EchoExplorer - An echolocation training platform</h3>
+							<div class="row">
+								<div class="4u 12u(mobile)" style="padding-top:4em">
+									<iframe width="450" height="450" src="https://www.youtube.com/embed/xATIyq3uZM4" frameborder="0" allowfullscreen></iframe>
+								</div>
+								<div class="8u 12u(mobile)" style="padding-left:6em">
+									<p> EchoExplorer is a research project that I've been involved with since August 2014. The aim of this research project is to understand how the auditory and visual channels can work together to enhance visual capabilities for individuals with limited vision. Inspired by the exceptional echolocator, Danish Kish, we are in particular focusing on understanding how echoes can convey visual information and how humans can learn to pick up these auditory cues. </p>
+
+									<p> I have been focusing on two main parts of the research: (1) artificial echo generation, and (2) training app development. The artificailly generated echoes are integrated into the training app to implement tasks that aim to teach the users how to understand the auditory cues. The echo generation code is currently done in Matlab, while the app is developed on the Android platform.</p>
+
+									<p> The research work I've done has been supported by the CSoI (Center for Science of Information) Channels Program, an NSF program that provides undergraduate students with the opportunity to participate in a research project related to the Science of Information. You can view my brief NSF profile 
+									<a href="https://www.soihub.org/people.php?id=926">here</a>.<p>
+								</div>	
+							</div>
+						</div>
+				</article>
+			</div>
+
+			<!-- Education -->
+			<div class="wrapper style4">
+				<article class="container" id="education">
+				<h4> "Education is the most powerful weapon which you can use to change the world" </h4>
+				<p> I am deeply interested in education and pedagogy. I've worked on a number of education related projects and have held teaching positions. Here's some more information. </p>
+
+				<div class="12u">
+					<h3>Teaching Introduction to Programming and CS</h3>
+					<p> <img src="112-fence.jpg" width=115% height=100%
+					style="padding-right:10em"></p>
+					<p>For the past two and a half years, I've been a teaching assistant for 15-112, an introductory to CS course at Carnegie Mellon University. The course is taught in Python and covers a range of topis including functions, lists, maps, objects, and recursion.</p>
+
+					<p> 15-112 is one of the most intense introductory classes at CMU, which culminates with the development of term projects that students develop over a course of 4 weeks. You can see some of the term projects <a href="http://www.cs.cmu.edu/%7E112/gallery.html">here</a>. As a TA, I taught weekly recitations, held office hours, led review sessions of more than 100 students, and mentored students through the development of their term projects. </p>
+
+					<p> In Spring 2015 I took on the role of the assistant head TA, whereas from Fall 2015 through Spring 2016 I was the head TA for the course. This role involved coordinating the work of our amazing staff (40 TAs!) - preparing weekly recitation plans, mentoring TAs and providing performance feedback - as well as coordinating all the main course-wide activities that affected 400+ students!</p>
+
+					<p> You can find the course website <a href="http://www.cs.cmu.edu/%7E112">here</a>.</p>
+				</div>
+
+				<div class="container">
+					<h3>Mechanical Logic</h3>
+					<div class="row">
+						<div class="4u 12u(mobile)">
+							<img src="and-gate.png" width=100% height=100% align = "left" style="margin:0px 3px">
+						</div>
+						<div class="8u 12u(mobile)">
+							<p> The aim of this project was to demystify basic Boolean algebra concepts through the use of mechanical logic gates as more intuitive teaching tools. Over a course of a year, my team and I went through a couple of design iteration and were ultimately able to use these gates at various outreach events to teach middle and high school kids the basics of Boolean algebra.</p>
+
+							<p>For CMU's Build18 hack week in 2013, we developed very small, LEGO-compatible version of the gates. We won the First Penguin award, named after a term coined by CMU's professor Randy Pausch, for a project which deviated most significantly from the theme of the electronics- and programming-themed competition. </p>
+
+							<p>If you want to read more about this project, you can find our project blog <a href="https://mechalogic.wordpress.com/">here.
+						</div>	
+					</div>
+				</div>
+				</article>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
